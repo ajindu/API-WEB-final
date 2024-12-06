@@ -10,7 +10,7 @@ public class ApiStep {
     ApiPage apiPage;
     Response res;
 
-    public  ApiStep(){
+    public ApiStep(){
         this.apiPage = new ApiPage();
     }
 
@@ -68,5 +68,50 @@ public class ApiStep {
     @And("hit api post create new user with invalid status")
     public void hitApiPostCreateNewUserWithInvalidStatus() {
         apiPage.hitApiPostCreateUserInvalidStatus();
+    }
+
+    @And("hit api get user by id {string}")
+    public void hitApiGetUserById(String userId) {
+        apiPage.hitApiGetUserById(userId);
+    }
+
+    @Then("validation response body get user by id")
+    public void validationResponseBodyGetUserById() {
+        apiPage.validationResponseBodyGetUserById();
+    }
+
+    @And("hit api search user by name {string}")
+    public void hitApiSearchUserByName(String name) {
+        apiPage.hitApiSearchUserByName(name);
+    }
+
+    @Then("validation response body search user by name")
+    public void validationResponseBodySearchUserByName() {
+        apiPage.validationResponseBodySearchUserByName();
+    }
+
+    @And("hit api search user by gender {string}")
+    public void hitApiSearchUserByGender(String gender) {
+        apiPage.hitApiSearchUserByGender(gender);
+    }
+
+    @Then("validation response body search user by gender")
+    public void validationResponseBodySearchUserByGender() {
+        apiPage.validationResponseBodySearchUserByGender();
+    }
+
+    @And("hit api search user by status {string}")
+    public void hitApiSearchUserByStatus(String status) {
+        apiPage.hitApiSearchUserByStatus(status);
+    }
+
+    @Then("validation response body search user by status")
+    public void validationResponseBodySearchUserByStatus() {
+        apiPage.validationResponseBodySearchUserByStatus();
+    }
+
+    @And("hit api delete user by id {string}")
+    public void hitApiDeleteUserById(String userId) {
+        apiPage.hitApiDeleteUserById(userId);
     }
 }

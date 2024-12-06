@@ -75,5 +75,28 @@ public class Models {
         String finalEndpoint = endpoint + "/" + user_id;
         return request.when().delete(finalEndpoint);
     }
+    public static Response getUserById(String endpoint, String user_id) {
+        setupHeaders();
+        String finalEndpoint = endpoint + "/" + user_id;
+        return request.when().get(finalEndpoint);
+    }
+    public static Response searchUserByName(String endpoint, String name) {
+        setupHeaders();
+        String finalEndpoint = endpoint + "?name=" + name;
+        return request.when().get(finalEndpoint);
+    }
+    public static Response searchUserByGender(String endpoint, String gender) {
+        setupHeaders();
+        String finalEndpoint = endpoint + "?gender=" + gender;
+        return request.when().get(finalEndpoint);
+    }
+    public static Response searchUserByStatus(String endpoint, String status) {
+        setupHeaders();
+        String finalEndpoint = endpoint + "?status=" + status;
+        return request.when().get(finalEndpoint);
+    }
+
+
+
 }
 
