@@ -15,7 +15,6 @@ public class WebPageInput {
     By input_year = By.id("year");
 
     public void inputName(String name){
-       driver.findElement(input_name).click();
        driver.findElement(input_name).sendKeys(name);
     }
     public void inputCountry(String country){
