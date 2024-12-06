@@ -11,7 +11,7 @@ public class WebStepInput {
     
     @And("user input name {string}")
     public void userInputName(String name) throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         wpi.inputName(name);
     }
 
