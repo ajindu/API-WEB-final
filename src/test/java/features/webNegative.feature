@@ -42,7 +42,7 @@ Feature: Web Automation Negative Test
     And user click login button
     And user will see text welcome
     And user click phones menu
-    And user click product "Sony"
+    And user click product "Iphone"
     And user click add to cart
     And user click cart icon
     And user click delete
@@ -55,7 +55,7 @@ Feature: Web Automation Negative Test
   Scenario: Test checkout product without login
     Given open web page
     And user click phones menu
-    And user click product "Nokia"
+    And user click product "Iphone"
     And user click add to cart
     And user click cart icon
     And user click delete
