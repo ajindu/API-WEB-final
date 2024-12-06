@@ -4,7 +4,7 @@ Feature: Web Automation Test Login and Sign Up
   Scenario: Test create a new account
     Given open web page
     And user click icon sign up
-    And user input sign up username "userNew123mm"
+    And user input sign up username "userNew123YY"
     And user input sign up password "secret"
     And user click sign up button
     Then user will see message "Sign up successful"
