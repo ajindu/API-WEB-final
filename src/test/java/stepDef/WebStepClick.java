@@ -64,6 +64,7 @@ public class WebStepClick {
     @And("user click delete")
     public void userClickDelete(){
         wpc.removeCart();
+        driver.navigate().refresh();
     }
 
     @And("user click log out")
