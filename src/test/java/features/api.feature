@@ -51,7 +51,7 @@ Feature: API Automation Test
   @api
   Scenario: Test delete user by id
     Given prepare url for "DELETE_USER"
-    And hit api delete user by id "7570376"
+    And hit api delete user by id "7570422"
     Then validation status code is equals 204
 
   @api
