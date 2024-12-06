@@ -7,7 +7,7 @@ import java.time.Duration;
 
 import static helper.Utility.driver;
 public class WebPageInput {
-    By input_name = By.xpath("//*[@id='name']");
+    By input_name = By.xpath("(//input[@id='name'])[1]");
     By input_country = By.id("country");
     By input_city = By.id("city");
     By input_card = By.id("card");
@@ -15,7 +15,7 @@ public class WebPageInput {
     By input_year = By.id("year");
 
     public void inputName(String name){
-       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
        wait.until(ExpectedConditions.elementToBeClickable(input_name));
        driver.findElement(input_name).sendKeys(name);
     }
