@@ -7,7 +7,7 @@ import java.time.Duration;
 
 import static helper.Utility.driver;
 public class WebPageInput {
-    By input_name = By.xpath("(//input[@id='name'])[1]");
+    By input_name = By.cssSelector("#name");
     By input_country = By.id("country");
     By input_city = By.id("city");
     By input_card = By.id("card");
