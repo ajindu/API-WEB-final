@@ -13,8 +13,8 @@ public class WebStepClick {
     }
 
     @And("user click laptops menu")
-    public void userClickLaptopsMenu(){
-       // Thread.sleep(7000);
+    public void userClickLaptopsMenu throws InterruptedException(){
+        Thread.sleep(10000);
         wpc.clickLaptopsMenu();
     }
 
@@ -45,14 +45,14 @@ public class WebStepClick {
     }
 
     @And("user click monitors menu")
-    public void userClickMonitorsMenu(){
-       // Thread.sleep(7000);
+    public void userClickMonitorsMenu throws InterruptedException(){
+        Thread.sleep(10000);
         wpc.clickMonitorsMenu();
     }
 
     @And("user click phones menu")
-    public void userClickPhonesMenu(){
-        //Thread.sleep(7000);
+    public void userClickPhonesMenu throws InterruptedException(){
+        Thread.sleep(10000);
         wpc.clickPhonesMenu();
     }
 
@@ -62,8 +62,8 @@ public class WebStepClick {
     }
 
     @And("user click log out")
-    public void userClickLogOut(){
-       // Thread.sleep(7000);
+    public void userClickLogOut throws InterruptedException(){
+        Thread.sleep(10000);
         wpc.clickLogoutIcon();
     }
 
