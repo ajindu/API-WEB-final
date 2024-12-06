@@ -8,7 +8,8 @@ public class WebStepInput {
     public WebStepInput(){
         this.wpi = new WebPageInput();
     }
-
+    
+    @And("user input name {string}")
     public void userInputName(String name) throws InterruptedException {
         Thread.sleep(5000);
         wpi.inputName(name);
