@@ -23,7 +23,6 @@ public class WebStepClick {
     @And("user click product {string}")
     public void userClickProduct(String product) throws InterruptedException{
         Thread.sleep(5000);
-        driver.navigate().refresh();
         wpc.assertProduct(product);
 
     }
