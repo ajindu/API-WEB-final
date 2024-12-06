@@ -7,16 +7,17 @@ import java.time.Duration;
 
 import static helper.Utility.driver;
 public class WebPageInput {
-    By input_name = By.id("name");
+    By input_name = By.xpath("//*[@id='name']");
     By input_country = By.id("country");
     By input_city = By.id("city");
     By input_card = By.id("card");
     By input_month = By.id("month");
     By input_year = By.id("year");
 
-    public void inputName(String name) throws InterruptedException{
-        Thread.sleep(5000);
-        driver.findElement(input_name).sendKeys(name);
+    public void inputName(String name){
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       wait.until(ExpectedConditions.elementToBeClickable(input_name));
+       driver.findElement(input_name).sendKeys(name);
     }
     public void inputCountry(String country){
         driver.findElement(input_country).sendKeys(country);
