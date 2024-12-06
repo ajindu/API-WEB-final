@@ -41,8 +41,8 @@ Feature: Web Automation Negative Test
     And user input password "secret"
     And user click login button
     And user will see text welcome
-    And user click phones menu
-    And user click product "Iphone"
+    And user click monitors menu
+    And user click product "ASUS"
     And user click add to cart
     And user click cart icon
     And user click delete
@@ -54,8 +54,8 @@ Feature: Web Automation Negative Test
   @web
   Scenario: Test checkout product without login
     Given open web page
-    And user click phones menu
-    And user click product "Iphone"
+    And user click monitors menu
+    And user click product "ASUS"
     And user click add to cart
     And user click cart icon
     And user click delete
