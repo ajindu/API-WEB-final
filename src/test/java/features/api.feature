@@ -11,7 +11,7 @@ Feature: API Automation Test
   @api
   Scenario: Test get user by id
     Given prepare url for "GET_USER_BY_ID"
-    And hit api get user by id "7567331"
+    And hit api get user by id "7566931"
     Then validation status code is equals 200
     Then validation response body get user by id
 
@@ -51,7 +51,7 @@ Feature: API Automation Test
   @api
   Scenario: Test delete user by id
     Given prepare url for "DELETE_USER"
-    And hit api delete user by id "7567887"
+    And hit api delete user by id "7564590"
     Then validation status code is equals 204
 
   @api
