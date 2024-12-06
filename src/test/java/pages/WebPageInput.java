@@ -14,7 +14,8 @@ public class WebPageInput {
     By input_month = By.id("month");
     By input_year = By.id("year");
 
-    public void inputName(String name){
+    public void inputName(String name) throws InterruptedException{
+        Thread.sleep(5000);
         driver.findElement(input_name).sendKeys(name);
     }
     public void inputCountry(String country){
