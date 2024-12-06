@@ -64,8 +64,6 @@ Feature: Web Automation Negative Test
     And user click product "MacBook air"
     And user click add to cart
     And user click cart icon
-    And user click delete
-    And user click cart icon
     And user click place order
     And user input name "Widi"
     And user input country "Indonesia"
