@@ -16,8 +16,8 @@ public class WebPageInput {
 
     public void inputName(String name){
        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-       wait.until(ExpectedConditions.elementToBeClickable(input_name));
-       input_name.sendKeys(name);
+       wait.until(ExpectedConditions.visibilityOfElementLocated(input_name);
+       driver.findElement(input_name).sendKeys(name);
     }
     public void inputCountry(String country){
         driver.findElement(input_country).sendKeys(country);
