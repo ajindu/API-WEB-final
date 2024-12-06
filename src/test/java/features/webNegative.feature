@@ -47,7 +47,7 @@ Feature: Web Automation Negative Test
     And user click cart icon
     And user click delete
     And user click place order
-    And user input name "Vinsen"
+    And user input name "Pak Vinsen"
     And user input card "54321"
     And user click purchase
 
@@ -60,6 +60,6 @@ Feature: Web Automation Negative Test
     And user click cart icon
     And user click delete
     And user click place order
-    And user input name "Dedi"
+    And user input name "Husen"
     And user input card "999999"
     And user click purchase
