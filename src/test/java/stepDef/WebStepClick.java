@@ -3,6 +3,7 @@ package stepDef;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.WebPageClick;
+import static helper.Utility.driver;
 
 public class WebStepClick {
 
@@ -14,7 +15,8 @@ public class WebStepClick {
 
     @And("user click laptops menu")
     public void userClickLaptopsMenu() throws InterruptedException{
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.navigate().refresh();
         wpc.clickLaptopsMenu();
     }
 
@@ -46,13 +48,15 @@ public class WebStepClick {
 
     @And("user click monitors menu")
     public void userClickMonitorsMenu() throws InterruptedException{
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.navigate().refresh();
         wpc.clickMonitorsMenu();
     }
 
     @And("user click phones menu")
     public void userClickPhonesMenu() throws InterruptedException{
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.navigate().refresh();
         wpc.clickPhonesMenu();
     }
 
@@ -63,7 +67,8 @@ public class WebStepClick {
 
     @And("user click log out")
     public void userClickLogOut() throws InterruptedException{
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.navigate().refresh();
         wpc.clickLogoutIcon();
     }
 
