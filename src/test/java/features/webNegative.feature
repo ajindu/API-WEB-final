@@ -47,8 +47,8 @@ Feature: Web Automation Negative Test
     And user click cart icon
     And user click delete
     And user click place order
-    And user input name "Kina"
     And user input country "Indonesia"
+    And user input name "Kina"
     And user input city "Jakarta"
     And user input card "12345"
     And user input month "03"
@@ -65,8 +65,8 @@ Feature: Web Automation Negative Test
     And user click cart icon
     And user click delete
     And user click place order
-    And user input name "Widi"
     And user input country "Indonesia"
+    And user input name "Widi"
     And user input city "Jakarta"
     And user input card "12345"
     And user input month "03"
