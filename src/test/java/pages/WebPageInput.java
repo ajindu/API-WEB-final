@@ -15,8 +15,6 @@ public class WebPageInput {
     By input_year = By.id("year");
 
     public void inputName(String name){
-       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-       wait.until(ExpectedConditions.visibilityOfElementLocated(input_name));
        driver.findElement(input_name).sendKeys(name);
     }
     public void inputCountry(String country){
